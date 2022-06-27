@@ -1,0 +1,157 @@
+/* HTML tags */
+
+
+
+section {
+  scroll-margin-top: 7em;
+}
+
+hr {
+  background-color: #3498db;
+  color: #3498db;
+  border-width: 0;
+  height:2px;
+  /* color: white; */
+  /* border-bottom: 2px solid #3498db; */
+  /* border-bottom: 2px solid blue; */
+}
+
+/* toENG */
+
+.eng {
+  cursor: pointer;
+}
+
+#navbar-bottom-b {
+   /* border-bottom: 1px solid #cde6f6; */
+   border-bottom: 1px solid #3498db;
+}
+/* Bootstrap classes!!! */
+
+
+.card:hover {
+  transition: all .2s;
+  transform: scale(1.05);
+}
+
+.card {
+  height: 100%;
+}
+
+.active {
+  color: blue;
+}
+
+/* Title section */
+
+.main-container {
+  padding: 0 15% 0;
+}
+
+.navigation-bar {
+  background-color: white;
+
+}
+
+.nav-container {
+  padding: 0;
+}
+
+.intro-row {
+  margin: 10% 0 18%;
+}
+
+.intro-szoveg {
+  padding: 15% 0 0 0;
+}
+
+.selfie {
+  width: 80%;
+  border-radius: 5%;
+}
+
+.selfie-div {
+  text-align: right;
+}
+
+/* bemutatkozas */
+
+.szakdoga {
+  transform: rotate(17deg);
+  height: 95%;
+}
+
+.szakdoga-div {
+  text-align: center;
+}
+
+
+.idovonal {
+  margin-top: 5%;
+}
+
+.card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.card-link:hover {
+  color: black;
+}
+
+
+/* skills */
+
+#skills .card {
+  padding-top: 5%;
+  padding-bottom: 5%;
+  border-radius: 10px;
+}
+
+#skills .card-header {
+  background: white;
+  border: none;
+}
+
+#skills .card-footer {
+  background: white;
+  border: none;
+}
+
+
+/* kapcsolat */
+
+#kapcsolat, #introduction {
+  margin: 5% 0 5%;
+}
+
+#kapcsolat a {
+  text-decoration: none;
+}
+
+#footer {
+  text-align: center;
+  margin-bottom: 0;
+}
+
+#footer a {
+  text-decoration: none;
+}
+
+
+/* mobile */
+@media (max-width: 991px) {
+  .mob-marg {
+    margin-top: 3%;
+  }
+
+  .selfie, .szakdoga {
+    display: none;
+  }
+}
+
+
+/* .tovabb {
+  color: black;
+  text-decoration: none;
+} */
