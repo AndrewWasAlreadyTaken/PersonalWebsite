@@ -1,9 +1,17 @@
+/* HIDE */
+
+.hide {
+  display: none;
+}
+
 /* HTML tags */
-
-
 
 section {
   scroll-margin-top: 7em;
+}
+
+sup {
+  font-size: 50%;
 }
 
 hr {
@@ -18,7 +26,7 @@ hr {
 
 /* toENG */
 
-.eng {
+.eng, .hun {
   cursor: pointer;
 }
 

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Hegedüs András</title>
-    <meta name="description" content="Hegedüs András Mérnök programozó szemelyes weboldal">
+    <meta name="description" content="Hegedüs András mérnök programozó szemelyes weboldal">
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css">
     <script src="js/bootstrap.js" charset="utf-8"></script>
@@ -30,13 +30,19 @@
             <div class="collapse navbar-collapse" id="navbarNav">
               <ul class="navbar-nav ms-auto">
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="#title">Kezdőlap</a>
+                  <a class="nav-link eng" aria-current="page"><img src="https://img.icons8.com/office/30/000000/great-britain.png"/></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#introduction">Bemutatkozás</a>
+                  <a class="nav-link hun" aria-current="page"><img src="https://img.icons8.com/office/30/000000/hungary.png"/></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" href="#kapcsolat">Kapcsolat</a>
+                  <a class="nav-link active" aria-current="page" href="#title"> <span class="hu">Kezdőlap</span><span class="en">Home</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#introduction"><span class="hu">Bemutatkozás</span><span class="en">Introduction</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="#kapcsolat"><span class="hu">Kapcsolat</span><span class="en">Contact</span></a>
                 </li>
               </ul>
             </div>
@@ -47,9 +53,9 @@
       <section id="title">
         <div class="row intro-row">
           <div class="col-lg-7 intro-szoveg">
-            <h1>👋 <br>Üdv, Hegedüs András vagyok,</h1>
-            <p>mechatronikus, programozó.</p>
-            <a href="#introduction"><button class="btn btn-warning" type="button" name="button">Bemutatkozás</button></a>
+            <h1><span class="hu">👋 <br>Üdv, Hegedüs András vagyok,</span><span class="en">👋 <br>Hi, I am András Hegedüs,</span></h1>
+            <p><span class="hu">mechatronikus, programozó.</span><span class="en">mechatronic engineer, programmer.</span></p>
+            <a href="#introduction"><button class="btn btn-warning" type="button" name="button"><span class="hu">Bemutatkozás</span><span class="en">Introduction</span></button></a>
           </div>
           <div class="col-lg-5 selfie-div">
             <img class="selfie mob-marg" src="images/background_noises_yellow (1).jpg" alt="hegedus andras selfie">
@@ -63,14 +69,16 @@
     <!-- Bemutatkozás -->
 
     <section id="introduction">
-      <h2 id="bemutat">Bemutatkozás</h2>
+      <h2><span class="hu">Bemutatkozás</span><span class="en">Introduction</span></h2>
       <hr>
       <div class="row">
         <div class="col-lg-6">
-          <p>A mechatronika diplomám az Óbudai Egytem BGK karán szereztem meg,
+          <p><span class="hu">A mechatronika diplomám az Óbudai Egytem BGK karán szereztem meg,
             szakdolgozatomat a gépi tanuló algoritmusokról és azok felhasználásáról írtam. Utolsó egyetemi évem alatt a Harman Becker Kft. pécsi gyárában
-          dolgoztam minőségbiztosítási mérnök gyakornokként.</p>
-          <a href="files/cv.pdf" target="_blank"> <button class="btn btn-warning" type="button" name="button">Önéletrajz</button> </a>
+          dolgoztam minőségbiztosítási mérnök gyakornokként.</span><span class="en">I got my BSc degree at Óbuda University.
+            The theme of my thesis was data science, machine learning (algorithms and their applications). In the last year I have been working at Harman Backer Ltd., as a quality engineer trainee. </span></p>
+          <a class="hu" href="files/cv.pdf" target="_blank"> <button class="btn btn-warning" type="button" name="button">Önéletrajz</button> </a>
+          <a class="en" href="files/cv_en.pdf" target="_blank"> <button class="btn btn-warning" type="button" name="button">CV</button> </a>
         </div>
         <div class="col-lg-6 szakdoga-div">
           <img src="images/SZD.png" alt="szakdolgozat" class="szakdoga">
@@ -78,6 +86,7 @@
       </div>
       <div class="row idovonal">
         <div class="col-lg-4 mob-marg">
+          <a target="_blank" href="https://www.harman.com/" class="card-link">
           <div class="card">
             <div class="card-header">
               <h5>2021.09-</h5>
@@ -89,21 +98,25 @@
               <p>Quality engineer trainee - Automotive</p>
             </div>
           </div>
+          </a>
         </div>
         <div class="col-lg-4 mob-marg">
+          <a target="_blank" href="https://bgk.uni-obuda.hu/" class="card-link">
           <div class="card">
             <div class="card-header">
               <h5>2018-2022</h5>
             </div>
             <div class="card-body">
-              <h3>Óbudai Egyetem - BGK</h3>
+              <h3><span class="hu">Óbudai Egyetem - BGK</span><span class="en">Óbuda university</span></h3>
             </div>
             <div class="card-footer">
-              <p>Mechatronikai mérnök - BSc</p>
+              <p><span class="hu">Mechatronikai mérnök - BSc</span><span class="en">Mechatronic engineer</span></p>
             </div>
           </div>
+          </a>
         </div>
         <div class="col-lg-4 mob-marg">
+          <a target="_blank" href="https://www.babits.pte.hu/index.php?szelesseg=1440" class="card-link">
           <div class="card">
             <div class="card-header">
               <h5>2014-2018</h5>
@@ -112,9 +125,10 @@
               <h3>PTE Babits Mihály</h3>
             </div>
             <div class="card-footer">
-              <p>Emelt matematika-informatika osztály</p>
+              <p><span class="hu">Emelt matematika-informatika osztály</span><span class="en">Mathematics, informatics specialized class</span></p>
             </div>
           </div>
+          </a>
         </div>
       </div>
 
@@ -130,7 +144,7 @@
     <!-- Skillek -->
 
     <section id="skills">
-      <h2 id="bemutat">Ismeretek, kézségek</h2>
+      <h2><span class="hu">Ismeretek, kézségek</span><span class="en">Skills</span></h2>
       <hr>
       <div class="row">
 
@@ -138,10 +152,17 @@
 
           <div class="card">
             <div class="card-header">
-              <h5>Programozás</h5>
+              <h5><span class="hu">Programozás</span><span class="en">Programming</span></h5>
             </div>
             <div class="card-body">
-              <p>Tanulmányaim során, valamint szabadidőmben is sokat foglakoztam programozással, többféle környezetben és nyelvvel van már tapasztalatom.  </p>
+              <p><span class="hu">Tanulmányaim során, valamint szabadidőmben is sokat foglakoztam programozással, többféle környezetben és nyelvel van már tapasztalatom.</span>
+                <span class="en">
+                  <ul class="en">
+                  <li>C, C++</li>
+                  <li>C#, JS</li>
+                  <li>MATLAB</li>
+                </ul>
+              </span></p>
             </div>
             <div class="card-footer">
               <i class="fa-solid fa-code"></i>
@@ -155,10 +176,11 @@
 
           <div class="card">
             <div class="card-header">
-              <h5>Mechatronikai ismeretek</h5>
+              <h5><span class="hu">Mechatronikai ismeretek</span><span class="en">Mechatronics</span></h5>
             </div>
             <div class="card-body">
-              <p>Mechatronika szaknak köszönhetően a programozás mellett gépész- és villamosmérnöki tudásra is szert tehettem.</p>
+              <p><span class="hu">Mechatronika szaknak köszönhetően a programozás mellett gépész- és villamosmérnöki tudásra is szert tehettem.</span>
+                <span class="en">Mechatronics (mechanics – electronics – IT) knowledge and practical skills</span></p>
             </div>
             <div class="card-footer">
               <i class="fa-solid fa-gear"></i>
@@ -171,10 +193,17 @@
         <div class="col-lg-4 mob-marg">
           <div class="card">
             <div class="card-header">
-              <h5>Webfejlesztés</h5></h5>
+              <h5><span class="hu">Webfejlesztés</span><span class="en">Web development</span></h5>
             </div>
             <div class="card-body">
-              <p>Szabadidőmben jelenleg webfejlesztéssel foglakozom.</p>
+              <p><span class="hu">Szabadidőmben jelenleg webfejlesztéssel foglakozom.</span><span class="en">
+                <ul class="en">
+                  <li>HTML, CSS, JS, jQuery, React</li>
+                  <li>Node.js</li>
+                  <li>SQL, MongoDB</li>
+                  <li>GIT</li>
+                </ul>
+              </span></p>
             </div>
             <div class="card-footer">
               <i class="fa-brands fa-html5"></i>
@@ -193,15 +222,15 @@
     <!-- Kapcsolat -->
 
     <section id="kapcsolat">
-      <h2>Kapcsolat</h2>
+      <h2><span class="hu">Kapcsolat</span><span class="en">Contact</span></h2>
       <hr>
       <div class="row">
         <div class="col-lg-6">
-        <a href="mailto:hegande15@gmail.com"><i class="fa-solid fa-envelope"></i><span> hegande15@gmail.com</span></a><br>
-        <a href="tel:+36202273305"><i class="fa-solid fa-phone"></i></i><span> +36 20 227 3305</span></a>
+        <a target="_blank" href="mailto:hegande15@gmail.com"><i class="fa-solid fa-envelope"></i><span> hegande15@gmail.com</span></a><br>
+        <a target="_blank" href="tel:+36202273305"><i class="fa-solid fa-phone"></i></i><span> +36 20 227 3305</span></a>
         </div>
         <div class="col-lg-6">
-        <a href="https://www.linkedin.com/in/andr%C3%A1s-heged%C3%BCs-7166311b3/"><i class="fa-brands fa-linkedin"></i> <span> Hegedüs Andras</span> </a>
+        <a target="_blank" href="https://www.linkedin.com/in/andr%C3%A1s-heged%C3%BCs-7166311b3/"><i class="fa-brands fa-linkedin"></i> <span> Hegedüs Andras</span> </a>
         </div>
       </div>
 
@@ -214,12 +243,12 @@
     <section id="footer">
       <hr>
       <div class="row">
-        <a class="warning" href="#"><h3>ha</h3></a>
+        <a class="warning" href="#"><h3>ha<span><sup>©</sup></span></h3></a>
       </div>
     </section>
 
   </div>
 
-
+  <script src="eng.js" charset="utf-8"></script>
   </body>
 </html>
